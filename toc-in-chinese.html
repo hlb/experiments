@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>TOC in Chinese (only works in Firefox)</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/reset-fonts-grids/reset-fonts-grids.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.1/build/base/base-min.css">
+    <style type="text/css">
+        h2, h3 { font-weight: normal; }
+        h3 { text-indent: 2em; }
+        .toc {
+            counter-reset: chapter section;
+        }
+        h2 {
+            counter-reset: section;
+        }
+        h2:before {
+            content: counter(chapter) ". ";
+            content: counter(chapter, -moz-trad-chinese-formal) "、";
+            counter-increment: chapter;
+        }
+        h3:before {
+            content: counter(chapter) "." counter(section) ". ";
+            content: counter(chapter, -moz-trad-chinese-formal) "之" counter(section, -moz-trad-chinese-informal) "、";
+            counter-increment: section;
+        }
+    </style>
+</head>
+<body>
+    <div id="doc">
+        <h1><a href="http://www.books.com.tw/exep/prod/booksfile.php?item=0010470543">會拿筆就會畫：55個保證學會的素描訣竅</a></h1>
+        <div class="toc">
+            <h2>作畫步驟</h2>
+            <h3>內在對話</h3>
+            <h3>誘發詞</h3>
+            <h3>盲畫</h3>
+            <h3>畫勾勒</h3>
+            <h3>觀察與認識</h3>
+            <h3>瞇眼法</h3>
+            <h3>個性化</h3>
+            <h3>開發形狀意識</h3>
+            <h3>聚焦法</h3>
+            <h2>畫家的筆法</h2>
+            <h3>區分你的兩種筆法</h3>
+            <h3>臨摹</h3>
+            <h3>仿效</h3>
+            <h3>自由筆法</h3>
+            <h3>控制筆法</h3>
+            <h3>探究作畫工具</h3>
+            <h3>抹擦</h3>
+            <h2>比例：測量事情</h2>
+            <h3>目測法</h3>
+            <h3>找中點</h3>
+            <h3>使用垂直線和水平線</h3>
+            <h3>尋找對比測量</h3>
+            <h3>透視前縮</h3>
+            <h3>誇大比例</h3>
+            <h2>光影的效果</h2>
+            <h3>畫出分佈</h3>
+            <h3>造型</h3>
+            <h3>處理邊緣</h3>
+            <h3>分析光</h3>
+            <h3>誇大氛圍</h3>
+            <h3>合併形狀</h3>
+            <h3>用光設計</h3>
+            <h2>空間深度的效果</h2>
+            <h3>重疊形式</h3>
+            <h3>縮小尺寸</h3>
+            <h3>聚集線條</h3>
+            <h3>淡化邊緣與對比</h3>
+            <h3>透視作圖</h3>
+            <h3>目測角度</h3>
+            <h3>眼睛水平線及交匯點</h3>
+            <h3>勾畫橢圓</h3>
+            <h2>質地的效果</h2>
+            <h3>清晰化與簡筆化</h3>
+            <h3>感覺線條</h3>
+            <h3>重複和變化</h3>
+            <h3>對比筆觸</h3>
+            <h3>統一筆觸</h3>
+            <h3>距離拉遠</h3>
+            <h2>圖形與構圖</h2>
+            <h3>使用形狀構圖</h3>
+            <h3>感覺圖案</h3>
+            <h3>取景</h3>
+            <h3>裁切</h3>
+            <h3>跨板中的對立面</h3>
+            <h3>相交點</h3>
+            <h2>繪畫與想像</h2>
+            <h3>連接兩個袋子</h3>
+            <h3>創意畫畫</h3>
+            <h3>見慣不慣</h3>
+            <h3>按順序作畫</h3>
+            <h3>根據不同素材作畫</h3>
+            <h3>探索主題</h3>
+        </div>
+    </div>
+</body>
+</html>
