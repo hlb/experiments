@@ -8,11 +8,15 @@
     <style type="text/css">
         h2, h3 { font-weight: normal; }
         h3 { text-indent: 2em; }
+        h4 { text-indent: 4em; }
         .toc {
-            counter-reset: chapter section;
+            counter-reset: chapter section subsection;
         }
         h2 {
             counter-reset: section;
+        }
+        h3 {
+            counter-reset: subsection;
         }
         h2:before {
             content: counter(chapter) ". ";
@@ -23,6 +27,11 @@
             content: counter(chapter) "." counter(section) ". ";
             content: counter(chapter, -moz-trad-chinese-formal) "之" counter(section, -moz-trad-chinese-informal) "、";
             counter-increment: section;
+        }
+        h4:before {
+            content: counter(chapter) "." counter(section) "." counter(subsection) ". ";
+            content: counter(chapter, -moz-trad-chinese-formal) "之" counter(section, -moz-trad-chinese-informal) "之" counter(subsection, -moz-trad-chinese-informal) "、";
+            counter-increment: subsection;
         }
     </style>
 </head>
@@ -44,6 +53,9 @@
             <h3>區分你的兩種筆法</h3>
             <h3>臨摹</h3>
             <h3>仿效</h3>
+            <h4>有人說</h4>
+            <h4>這樣會</h4>
+            <h4>爛掉耶</h4>
             <h3>自由筆法</h3>
             <h3>控制筆法</h3>
             <h3>探究作畫工具</h3>
