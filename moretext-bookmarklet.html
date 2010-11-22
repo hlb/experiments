@@ -5,6 +5,6 @@
     <title>MoreText.js Bookmarklet</title>
 </head>
 <body>
-    <a href="javascript:var _el,_type,_n,_script;_el=document.activeElement;function _moreText(data){_el.value+=data.sentences.join('');};if(_el){_type=_el.tagName.toLowerCase();switch(_type){case'textarea':_n=10;break;case'input':_n=1;break;}if(_n){_script=document.createElement('script');_script.src='http://more.handlino.com/sentences.json?_='+Date.now()+'&callback=_moreText&n='+_n;document.body.appendChild(_script);}}">MoreText.js</a>
+    <a href="javascript:void(function(){var _el,_type,_n,_script;_el=document.activeElement;window._moreText=function(data){_el.value+=data.sentences.join('');};if(_el){_type=_el.tagName.toLowerCase();switch(_type){case'textarea':_n=10;break;case'input':_n=1;break;}if(_n){_script=document.createElement('script');_script.src='http://more.handlino.com/sentences.json?_='+Date.now()+'&callback=_moreText&n='+_n;document.body.appendChild(_script);}}}());">MoreText.js</a>
 </body>
 </html>
