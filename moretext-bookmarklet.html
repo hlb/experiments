@@ -8,6 +8,7 @@
     <h1>MoreText.js Bookmarklet</h1>
     <p>懶得在 input 或 textarea 打字嗎？請安裝 MoreText.js bookmarklet:</p>
     <a href="javascript:void(function(){var _el,_type,_n,_script;_el=document.activeElement;window._moreText=function(data){_el.value+=data.sentences.join('');};if(_el){_type=_el.tagName.toLowerCase();switch(_type){case'textarea':_n=10;break;case'input':_n=1;break;}if(_n){_script=document.createElement('script');_script.src='http://more.handlino.com/sentences.json?_='+Date.now()+'&callback=_moreText&n='+_n;document.body.appendChild(_script);}}}());">MoreText.js</a>
+    <p>接下來，只要點選 input 或 textarea，再點選 bookmarklet，就會自動幫您填入文字。</p>
     <p>馬上試試看？</p>
     <input type="text" name="demo-1" size="20"><br>
     <textarea name="demo-2" rows="20" cols="80"></textarea>
